@@ -1,0 +1,1005 @@
+/* Custom CSS made by SVN#7708 */
+/* This CSS was made with help from Dwizzen,
+/* the community snippets channel in the CSS Hub,
+/* and NizzQ's Public CSS - ty dwizzy ily
+/* This was made for quilly quilldong ily */
+
+/* Updates */
+/* Last Updated: 4/7/2022 8:40AM CST
+/* Fixed kill feed position, styled kill feed, and death screen
+/* What's next?: Client Settings Button showing, Join with link styled, privacy settings not displayed */
+
+/* Custom Font */
+@font-face {
+    font-family: customFont;
+    src: url(https://rawcdn.githack.com/SVN-ELVN/Kirka/d00a13be70e3b8b79f5da1db1200a4eb34181819/CSS/First/Fonts/Atami-Regular.otf)
+}
+
+* {
+    font-family: customFont !important;
+}
+
+/* AD Block */
+#ad-bottom,
+#ad-left {
+    width: 0px !important;
+}
+
+/* Background */
+.bg-radial {
+    display: none;
+}
+
+.pattern-bg {
+    background: url(https://media.discordapp.net/attachments/959224209735835701/961788785752956928/1920x1080-106451-anime-anime-girls-blue-hair-wings-headphones-rain.jpg) !important;
+}
+
+.interface .background {
+    background: linear-gradient(103.28deg, #000000 7.06%, #000000 90.75%) !important;
+}
+
+/* End Screen BG */
+.end-modal {
+    background: url(https://media.discordapp.net/attachments/959224209735835701/961788785752956928/1920x1080-106451-anime-anime-girls-blue-hair-wings-headphones-rain.jpg?) !important;
+}
+
+/* Custom Logo */
+.interface .logo {
+    content: url(https://media.discordapp.net/attachments/956584843750293544/960566213166129263/My_project_11.png?width=676&height=676)
+}
+
+.logo[data-v-6bc918e5] {
+    top: 48.5rem;
+    left: -90px;
+}
+
+/* Profile, Exp, And Moneys */
+.card-cont[data-v-1cbd79ff] {
+    background: #00000000;
+    border-bottom: 6px solid #00000000;
+    border-top: 4px solid #00000000;
+}
+
+.auth-form .btns button {
+    margin-top: 20px;
+    transform: none !important;
+    padding: 0px;
+}
+
+.button[data-v-02c36fca] {
+    -webkit-text-stroke: 0px !important;
+}
+
+.auth-form .btns button:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.auth-form button,
+.auth-form button .border-top,
+.auth-form button .border-bottom {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.auth-form button .triangle {
+    display: none;
+}
+
+.auth-form .text {
+    font-size: 30px !important;
+}
+
+.auth-form button:hover {
+    color: #eee;
+}
+
+.button[data-v-02c36fca]:after {
+    border: none;
+}
+
+.moneys[data-v-6bc918e5] {
+    margin-left: 56px;
+    margin-top: 734px;
+}
+
+/* Checkbox and Private */
+.private-btn > span[data-v-47e1b746] {
+    content: url(https://media.discordapp.net/attachments/523517791886770188/953239076457316382/openlock.png);
+    position: fixed;
+    left: 25px;
+    width: 40px;
+}
+
+.private-btn > input:checked + span[data-v-47e1b746] {
+    content: url(https://media.discordapp.net/attachments/523517791886770188/953239093955948544/lock.png);
+}
+
+.custom-checkbox > span[data-v-47e1b746]:before {
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+}
+
+.custom-checkbox > input:checked + span[data-v-47e1b746]:before {
+    background-color: #373737;
+}
+
+.select-mods-cont[data-v-6bc918e5] {
+    background-color: #262626cf;
+    backdrop-filter: blur(6px);
+    border: 4px solid #303030;
+}
+
+.select-mods-cont[data-v-6bc918e5] {
+    right: 326%;
+    height: 780px;
+    bottom: -70px;
+}
+
+.select-mods-maps[data-v-6bc918e5] {
+    height: 630px!important;
+}
+
+hr[data-v-6bc918e5] {
+    background-color: #1e347200;
+    border: 3px solid #2f395700;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+
+/* Player Position */
+#team-section > div.player {
+    margin-right: 85rem;
+    margin-top: 33rem;
+}
+
+/* Left Interface*/
+.left-interface .profile {
+    background: transparent;
+}
+
+.left-interface .progress-label {
+    display: none;
+}
+
+.left-interface .progress-lvl {
+    margin-bottom: 20px;
+}
+
+.left-interface .progress-line {
+    background: #4f4e4ead !important;
+    height: 17px;
+}
+
+.left-interface .progress {
+    background: -webkit-gradient(linear, left top, right top, from(#a8a8a8), to(#d5d5d5)) !important;
+    background: linear-gradient(to right, #8e8e8e, #e1e1e1) !important;
+}
+
+.left-interface .level {
+    color: white;
+}
+
+.left-interface .avatar-info,
+.left-interface .user-info,
+.left-interface .money {
+    background: transparent !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.left-interface .avatar-info:hover,
+.left-interface .user-info:hover {
+    background: transparent;
+}
+
+/* Left Icons */
+.svg-icon--news,
+.svg-icon--cube-edit,
+.svg-icon--gamepad,
+.svg-icon--store,
+.svg-icon--castle2 {
+    display: none;
+}
+.left-icons,
+.left-icons > div {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.left-icons[data-v-6bc918e5] {
+    left: unset;
+    top: 86%;
+}
+
+.left-icons .icon-btn {
+    background: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+}
+
+.left-icons .icon-btn:hover {
+    border-top: transparent !important;
+}
+
+/* Right Icons */
+.right-icons .icon-btn,
+.inventory-card {
+    width: 140px !important;
+}
+
+.right-icons svg,
+.gun-img {
+    display: flex;
+}
+
+.right-icons .wrapper {
+    transform: none !important;
+    height: 13px;
+}
+
+.right-icons .icon-btn {
+    background: transparent;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+
+.right-icons .icon-btn:hover {
+    border-top: none;
+    border-bottom: 3px solid #fff0 !important;
+}
+
+.right-icons .icon-btn:hover > .wrapper[data-v-ae524044] {
+    transform: none;
+}
+
+.right-icons .inventory-card {
+    background: transparent;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+.right-icons .inventory-card:hover {
+    background: transparent;
+    border-bottom: 3px solid #fff0;
+}
+
+#right-icons > div.icon-btn.text-1 > div > svg > use {
+    display: none !important;
+}
+
+#right-icons > div.card-cont.text-1.inventory-card > img {
+    display: none !important;
+}
+
+.icon[data-v-ae524044] {
+    margin-top: -64px!important;
+}
+
+/* Right Interface */
+.soc-group:nth-child(1),
+.text-soc {
+    display: none !important;
+}
+
+.soc-group:nth-child(2) {
+    background: url(https://media.discordapp.net/attachments/523517791886770188/947500791365787729/monitor-512.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 50px !important;
+    background-position-x: 1rem !important;
+    background-position-y: 1rem !important;
+    border-top: none;
+    border-bottom: none;
+    position: fixed;
+    right: 80px;
+    top: 12px;
+}
+
+.soc-group:nth-child(2):hover {
+    background: url(https://media.discordapp.net/attachments/523517791886770188/947500791365787729/monitor-512.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 50px !important;
+    background-position-x: 1rem !important;
+    background-position-y: 1rem !important;
+    transform: scale(1.2);
+}
+
+.soc-group:nth-child(2) svg {
+    opacity: 0;
+}
+
+.right-interface {
+    z-index: 999!important;
+}
+
+.right-interface .settings {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border-top: transparent !important;
+    margin-top: 30px;
+    transition: 0.3s !important;
+}
+
+.right-interface .settings:hover {
+    transform: scale(1.2)
+}
+
+#ranked-btn[data-v-6bc918e5] {
+    display: none;
+}
+
+.right-icons[data-v-6bc918e5] {
+    display: flex;
+    flex-direction: row;
+    right: 22%;
+    top: 85.6%;
+}
+
+/* Clan Tag and Level Stuff */
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #fff, 0 0 8px #fff;
+    }
+}
+
+.heads .clan-tag {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.clan-tag[data-v-1ac714da] {
+    color: #fff;
+}
+
+.levels[data-v-1ac714da] {
+    color: #ffffff;
+    background: #1c1c1c8c;
+}
+
+.level-value[data-v-30f27444] {
+    background: #1c1c1c8c;
+}
+
+.avatar[data-v-7dd84507] {
+    border: 4px solid #2c2c2c;
+    background-color: #20263900;
+}
+
+.progress-helper[data-v-27921169],
+.progress[data-v-27921169] {
+    position: absolute;
+    background: linear-gradient(180deg, #979797, #bfbfbf 46.35%, #fff);
+    height: 100%;
+}
+
+.level-progress[data-v-dc99bd6e] {
+    background: linear-gradient(180deg, #838383, #ffffff);
+}
+
+.lvl[data-v-27921169] {
+    background: #c5c5c5;
+}
+
+.buy-btn[data-v-27921169] {
+    box-shadow: inset 0 0 0.612rem 0.25rem #d9d9d9;
+}
+
+.description[data-v-dc99bd6e] {
+    color: hsla(0, 0%, 83.9%, .3);
+    background: #282828;
+    border: 0.125rem solid #424242;
+    margin-bottom: -0.15rem;
+}
+
+.bg-level[data-v-dc99bd6e] {
+    background: #202020;
+    backdrop-filter: blur(6px);
+    border-radius: 0.5rem;
+    border-left: 0.25rem solid #424242;
+    border-right: 0.25rem solid #424242;
+    border-top: 0.125rem solid #424242;
+    border-bottom: 0.125rem solid #424242;
+}
+
+.decor-bg[data-v-27921169] {
+    background: #343434;
+    height: 1.2rem;
+}
+/* Regions */
+.select-regions-cont[data-v-60f11bd2] {
+    background-color: #4040409e;
+    backdrop-filter: blur(6px);
+    border: 4px solid #464646;
+}
+
+/* Profile */
+.stat-name[data-v-d2be3bc6] {
+    color: #ffffff;
+}
+
+.secondary[data-v-5aafd15a] {
+    background-color: #42424259;
+    backdrop-filter: blur(1px);
+}
+
+.progress-level-value[data-v-d2be3bc6] {
+    color: #ffffff;
+}
+
+.progress[data-v-5aafd15a] {
+    background-color: #ffffff;
+}
+
+/* Transparent Play Button */
+#play-btn {
+    background: rgba(68, 68, 68, .45) !important;
+    box-shadow: 4px 4px 10px #000 !important;
+}
+
+#play-btn .border-top,
+#play-btn .border-bottom {
+    background: none;
+}
+
+.triangle[data-v-02c36fca] {
+    display: none !important;
+}
+
+/* Twitch Stream Hover */
+.live-streams {
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.live-streams:hover {
+    opacity: 1;
+}
+
+/* Buttons Modification */
+.select-mod[data-v-60f11bd2] {
+    background-color: #1c1c1c8c;
+    border: 4px solid #2c2c2c;
+}
+
+/* Play Content */
+.play-content .select-region,
+.play-content .select-mod {
+    background: rgba(55, 55, 55, .61);
+    backdrop-filter: blur(6px);
+    border-radius: 0.75rem;
+    border: 4px solid #fff0;
+}
+
+.play-content .select-region:hover {
+    background: rgba(55, 55, 55, .61);
+    backdrop-filter: blur(5px);
+}
+
+.play-content .select-mod:hover {
+    background: rgba(55, 55, 55, .61);
+}
+
+#play-btn {
+    background: rgba(68, 68, 68, .45) !important;
+    backdrop-filter: blur(6px);
+    width: 310px;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+#play-btn:hover {
+    background: #515151b3 !important;
+}
+
+#play-btn .border-top,
+#play-btn .border-bottom {
+    background: none !important;
+}
+
+.triangle[data-v-02c36fca] {
+    display: none !important;
+}
+
+.join-using-link {
+    background: rgba(55, 55, 55, .61);
+    backdrop-filter: blur(6px);
+    border-radius: 0.75rem;
+    border: 4px solid #fff0;
+}
+
+/* Button Locations (Thank you cvivic ily) */
+.moneys {
+    position: absolute;
+    left: 19.8%;
+    top: -615%;
+}
+
+#left-interface {
+    position: absolute;
+    left: 42%;
+    top: 78%;
+}
+
+/* Clan */
+.clans,
+.clans .items .item,
+.my-clan .list-container .list .item .item-content {
+    background: transparent !important;
+}
+
+.my-clan .card-cont,
+.my-clan .list-container,
+.champions-list {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Market */
+.bottom-subj .count {
+    background: transparent;
+}
+
+/* Notifications */
+.alert-default[data-v-8d4b9132] {
+    background: linear-gradient(270deg, #323232a8 9.46%, #3232325e 100.16%);
+    border: solid 0.15rem #3e3e3e00;
+}
+/* Game Searching/Found */
+.top[data-v-3894613f] {
+    background: linear-gradient(90.02deg, transparent .02%, rgb(38 38 38 / 85%) 25.53%, #2e2e2e 71.86%, transparent 99.98%);
+}
+
+.center[data-v-3894613f] {
+    background: linear-gradient(90.02deg, rgba(23, 22, 66, 0) .02%, rgb(28 28 28 / 75%) 19.8%, rgb(44 44 44 / 75%) 81.76%, rgba(22, 26, 66, 0) 99.98%);
+}
+
+.bottom[data-v-3894613f] {
+    background: linear-gradient(90.02deg, transparent .02%, rgb(34 34 34 / 85%) 25.53%, #222222 71.86%, transparent 99.98%);
+}
+
+/* Loading Screen */
+.player[data-v-cd9878b6] {
+    background: rgb(52 52 52 / 45%);
+    backdrop-filter: blur(6px);
+    border-radius: 0.75rem;
+}
+
+.level[data-v-cd9878b6] {
+    background: #2e2e2e91;
+    backdrop-filter: blur(6px);
+    color: #ffffff;
+}
+
+.loading-scene .name .label {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.loading-scene .name .label {
+    color: #ffffff !important;
+}
+
+#app > div.loading-scene > div.content.team > div.players.text-1.players-1 > div.player > div.player-left > div.name.text-2 > div.label > element.style {
+    color: #ffffff;
+}
+
+#app > div.loading-scene > div.logo > img.top-logo {
+    display: none;
+}
+
+#app > div.loading-scene > div.logo > img.bottom-logo {
+    display: none;
+}
+
+#app > div.loading-scene > div.logo {
+    top: 5%;
+    left: 32%;
+}
+
+#app > div.loading-scene > div.loading {
+    left: 74%;
+}
+
+.players-2[data-v-cd9878b6] {
+    margin-right: 35%;
+}
+
+.progress[data-v-cd9878b6] {
+    background: linear-gradient(90deg, #05f, #001d97, #001e9b,, #05f);
+}
+
+/* Pause Menu */
+.gun[data-v-68ad001e]:hover {
+    border: 0.313rem solid #4c4c4c7a;
+}
+.gun[data-v-68ad001e] {
+    background: radial-gradient(32.71% 68.55% at 50% 50%, #383838b3 0, #1e1e1e99 100%);
+    border-radius: 0.5rem;
+    border: 0.313rem solid #30303047;
+}
+
+.player[data-v-68ad001e] {
+    background: rgb(34 34 34 / 43%);
+    border-radius: 0.5rem;
+}
+.level[data-v-68ad001e] {
+    background: #68686847;
+    color: #ffffff;
+}
+
+.primary[data-v-68ad001e] {
+    color: #ffffff;
+}
+
+.esc-interface .player .label {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.esc-interface .player .label {
+    color: #ffffff !important;
+}
+
+.esc-interface {
+    backdrop-filter: blur(5px);
+}
+
+.esc-interface .head-right button,
+.esc-interface .head-right button .border-top,
+.esc-interface .head-right button .border-bottom {
+    background: #5e5e5e5e !important;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.esc-interface .head-right button:hover {
+    background: #5e5e5e5e !important;
+    border-bottom: 0px white;
+}
+
+.right-container[data-v-68ad001e] {
+    background: rgb(44 44 44 / 50%);
+    border-radius: 3.75rem
+}
+
+#app > div.game-interface > div.esc-interface > div.right-container > div.cont-continue > button {
+    background-color: #424242a1 !important;
+    --hover-color: #acadaf85 !important;
+}
+
+.border-top[data-v-02c36fca] {
+    background: #ffffff00;
+}
+
+.border-bottom[data-v-02c36fca] {
+    background: #ffffff00;
+}
+
+.container-card[data-v-747e6ab9] {
+    background: #00000000;
+    border: 3px solid #1e1e1e00;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0);
+    background-color: #0000002b;
+}
+
+/* HUD */
+.state-cont[data-v-1d4749de] {
+    left: 56.25rem;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 0%);
+}
+
+.name[data-v-2bbf437a] {
+    left: 0rem;
+}
+
+.bg[data-v-1d4749de] {
+    background: rgba(74, 74, 74, 0);
+}
+
+.instruction[data-v-43caa132] {
+    display: none;
+}
+
+#app > div.game-interface > div.desktop-game-interface > div.chat.chat-position > div.messages.messages-cont {
+    background: rgba(22, 22, 22, 0) !important;
+}
+
+.messages[data-v-76a3fe0a] {
+    min-height: 18.75rem;
+}
+
+.lvl[data-v-76a3fe0a] {
+    color: #343434;
+}
+
+.name[data-v-76a3fe0a] {
+    color: #c5c5c5;
+}
+
+.input[data-v-29d4a917] {
+    background: rgb(44 44 44 / 70%);
+    margin-right: -5.25rem;
+}
+
+.info-key-cont[data-v-0686a978] {
+    background: transparent;
+    box-shadow: 0 4px 4px rgb(30 35 90 / 0%), inset -1px 2px 4px 1px #fff0, inset 0 -2px 0 #cdcde600;
+    color: #ffffff;
+}
+
+.mWwn[data-v-1e33891b] {
+    display: none;
+}
+
+.list-weapons[data-v-1e33891b] {
+    display: none;
+}
+
+.desktop-game-interface .state {
+    position: fixed;
+    width: 500px !important;
+    top: 93%;
+    left: 37% !important;
+}
+
+.cont-endurance[data-v-57051149] {
+    background: #3e3e3e5c;
+}
+
+.hp-title[data-v-57051149] {
+    background: #32323273;
+}
+
+.cont-hp[data-v-57051149] {
+    background: #32323273;
+}
+
+.endurance-progress[data-v-57051149] {
+    border-radius: 0.188rem;
+    background: linear-gradient(90deg, #05f, #001e9f, #00146a,, #05f);
+}
+
+#app > div.game-interface > div.desktop-game-interface > div.state > div.hp > div.cont-hp > div {
+    background: rgb(205 205 205) !important;
+}
+
+.ammunition {
+    display: inline-block;
+    position: fixed;
+    left: 59%;
+    top: 820px;
+}
+
+.tab-info[data-v-a204db68] {
+    background: rgb(44 44 44 / 70%);
+}
+.head[data-v-a204db68] {
+    background: rgb(86 86 86 / 60%);
+    border: 2px solid #404040;
+}
+
+.player[data-v-a204db68] {
+    background-color: #242424de;
+}
+
+.list[data-v-a204db68] {
+    color: hsl(0deg 0% 100%);
+}
+
+#app > div.game-interface > div.desktop-game-interface > div.tab-info > div.players > div.player-list > div > div.player-left > div.key {
+    color: rgb(255 255 255) !important;
+}
+
+.primary[data-v-a204db68] {
+    color: #ffffff;
+}
+
+.tab-info[data-v-3a61646a] {
+    background: rgb(44 44 44 / 70%);
+}
+
+.list[data-v-3a61646a] {
+    color: hsl(0deg 0% 100%);
+}
+
+.player[data-v-3a61646a] {
+    background-color: #242424de
+}
+
+.primary[data-v-3a61646a] {
+    color: #ffffff;
+}
+
+.bg[data-v-1bee65f1] {
+    background: rgb(44 44 44 / 45%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 0%);
+}
+
+.state-cont[data-v-1bee65f1] {
+    left: 111rem;
+}
+
+.kill-bar-cont[data-v-e06e1414] {
+    top: 0.5rem;
+    right: 2rem;
+}
+
+.kill-bar-item[data-v-e06e1414] {
+    background: linear-gradient(45deg, #0800ff73, #0016a875);
+}
+
+.user-card[data-v-c2135fe4] {
+    background: linear-gradient(93.94deg, rgba(8, 0, 255, .44) -6.86%, rgba(255, 255, 255, .34) 104.84%);
+    border: 0.188rem solid #0e0e0e63;
+    border-radius: 2.25rem;
+}
+
+#app > div.game-interface > div.death-cont > div > div.top > div.top-left > div.name.text-2 > div.clan {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+#app > div.game-interface > div.death-cont > div > div.top > div.top-left > div.name.text-2 > div.clan {
+    color: #ffffff;
+}
+
+.lvl[data-v-c2135fe4] {
+    background: #7a7a7ab5;
+    color: #ffffff;
+}
+
+.red[data-v-37a63d5f] {
+    margin-right: 5rem;
+}
+
+/* .achive[data-v-7a3c1e94] */
+
+/* End Screen */
+.bottom[data-v-6c108d70] {
+    background: transparent;
+    box-shadow: 0 -0.25rem 0 #00000000;
+}
+
+.progress[data-v-5aafd15a] {
+    background: linear-gradient(90deg, #05f, #02197b, #00187b, #05f) !important;
+}
+
+.lvl-leader[data-v-dbd87de6] {
+    background-color: #18181863;
+    border-radius: 0.5rem;
+    color: #ffffff;
+}
+
+.top-name[data-v-319b95e8] {
+    color: hsl(0deg 0% 100%);
+}
+
+.clan-tag[data-v-dbd87de6] {
+    color: #ffffff;
+}
+
+.end-modal .clan-tag {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.item[data-v-319b95e8] {
+    background-color: #3c3c3cb0;
+}
+
+.chat-position[data-v-dbd87de6] {
+    right: 98rem;
+}
+
+.list-players[data-v-dbd87de6] {
+    top: 16rem;
+    left: 93rem;
+}
+
+#app > div.end-modal > div.content > div.chat > div.chat.chat-position > div.messages.messages-cont {
+    background: rgb(2 2 2 / 78%) !important;
+}
+
+.left-cont[data-v-6e90759b],
+.right-cont[data-v-6e90759b] {
+    background: rgba(17, 0, 255, .49);
+}
+
+.left[data-v-6e90759b],
+.right[data-v-6e90759b] {
+    background-color: rgba(8, 0, 255, .55);
+}
+
+.center-cont[data-v-6e90759b] {
+    background: rgba(0, 0, 255, .57);
+    border: 0.5rem solid rgba(0, 8, 255, .4);
+}
+
+.center[data-v-6e90759b] {
+    background: linear-gradient(99.61deg, rgb(255 106 0 / 7%) 8.92%, rgba(8, 0, 255, .55) 93.49%);
+    border: 8px solid rgba(0, 81, 255, .28);
+}
+
+.bg-center-red .circle[data-v-6e90759b] {
+    display: none;
+}
+
+
+
+/* Transparent Containers */
+.clans,
+.hub-container,
+.mobile-fullscreen,
+.add-friends,
+.tab-bar,
+.top-items,
+.subject,
+.inventory .avatar,
+.inventory .bottom,
+.background {
+    background: transparent !important;
+}
+
+.head-text,
+.reset-time,
+.info-awards,
+.news,
+.list-cont,
+.card-profile,
+.profile .k-d,
+.profile .statistics,
+.profile-cont .progress[data-v-d2be3bc6] {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.tabs {
+    background: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    border-right: none !important;
+}
+
+.active-tab,
+.tab {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.limit {
+    border-left: none !important;
+}
+
+.top-bar,
+.home,
+.name-page {
+    display: none !important;
+}
+
+.container {
+    background: transparent !important;
+    backdrop-filter: blur(5px);
+    box-shadow: none !important;
+}
+
+.champions-list {
+    box-shadow: none !important;
+}
+
+.profile .you {
+    visibility: hidden;
+}
