@@ -5,8 +5,8 @@
 /* This was made for quilly quilldong ily */
 
 /* Updates */
-/* Last Updated: 4/7/2022 8:40AM CST
-/* Fixed kill feed position, styled kill feed, and death screen
+/* Last Updated: 5/2/2022 4:33PM CST
+/* Added always on screen crosshair
 /* What's next?: Client Settings Button showing, Join with link styled, privacy settings not displayed */
 
 /* Custom Font */
@@ -1002,4 +1002,11 @@ hr[data-v-6bc918e5] {
 
 .profile .you {
     visibility: hidden;
+}
+
+/* Always On-Screen Crosshair */
+.crosshair-static{
+    visibility: visible !important;
+    position: absolute;
+    display:flex !important;
 }
