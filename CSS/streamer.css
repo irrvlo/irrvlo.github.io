@@ -1,70 +1,36 @@
 /* Streamer Mode CSS made by irrvlo#6969 */
 /* You can use this in your projects, just credit me */
 
-/* Last Updated: 5/3/2022 9:16AM CST
+/* Last Updated: 5/3/2022 9:44AM CST
+/* Fixed it breaking on each update, hopefully
 /* What's next?: Fixing names above players in game. */
 
-.nickname[data-v-1ac714da] {
+.nickname {
     visibility: hidden;
 }
-.nickname[data-v-1ac714da]::before {
+.nickname::before {
     content: 'Newbie';
     visibility: visible;
 }
 
-.message[data-v-76a3fe0a] {
+.message {
     visibility: hidden;
 }
 
-.message[data-v-76a3fe0a]::before {
+.message::before {
     content: "please turn off chat via client settings";
     visibility: visible;
 }
 
-.nickname[data-v-68ad001e] {
-    visibility: hidden;
-}
-.nickname[data-v-68ad001e]::before {
-    content: 'Newbie';
-    visibility: visible;
-}
-
-.nickname[data-v-cd9878b6] {
-    visibility: hidden;
-}
-
-.nickname[data-v-cd9878b6]::before {
-    content: 'Newbie';
-    visibility: visible;
-}
-
-.nickname[data-v-a204db68] {
-    visibility: hidden;
-}
-
-.nickname[data-v-a204db68]::before {
-    content: 'Newbie';
-    visibility: visible;
-}
-
-.short-id[data-v-a204db68]  {
+.short-id  {
     display: none;
 }
 
-.nickname[data-v-c2135fe4] {
+.name {
     visibility: hidden;
 }
 
-.nickname[data-v-c2135fe4]::before {
-    content: 'Newbie';
-    visibility: visible;
-}
-
-.name[data-v-e06e1414] {
-    visibility: hidden;
-}
-
-.name[data-v-e06e1414]::before {
+.name::before {
     content: 'Newbie';
     visibility: visible;
 }
@@ -78,27 +44,20 @@ span.name-kill::before {
     visibility: visible;
 }
 
-.username[data-v-30f27444] {
+.username {
     visibility: hidden;
 }
 
-.username[data-v-30f27444]::before {
+.username::before {
     content: "#------";
     visibility: visible;
 }
 
-.nickname[data-v-d2be3bc6] {
+.copy {
     visibility: hidden;
 }
-.nickname[data-v-d2be3bc6]::before {
-    content: "Newbie";
-    visibility: visible;
-}
-
-.copy[data-v-6547bfe1] {
-    visibility: hidden;
-}
-.copy[data-v-6547bfe1]::before {
+.copy::before {
     content: "#------";
     visibility: visible;
 }
+
