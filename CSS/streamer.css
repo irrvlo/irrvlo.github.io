@@ -1,0 +1,104 @@
+/* Streamer Mode CSS made by irrvlo#6969 */
+/* You can use this in your projects, just credit me */
+
+/* Last Updated: 5/3/2022 9:16AM CST
+/* What's next?: Fixing names above players in game. */
+
+.nickname[data-v-1ac714da] {
+    visibility: hidden;
+}
+.nickname[data-v-1ac714da]::before {
+    content: 'annonymous';
+    visibility: visible;
+}
+
+.message[data-v-76a3fe0a] {
+    visibility: hidden;
+}
+
+.message[data-v-76a3fe0a]::before {
+    content: "please turn off chat via client settings";
+    visibility: visible;
+}
+
+.nickname[data-v-68ad001e] {
+    visibility: hidden;
+}
+.nickname[data-v-68ad001e]::before {
+    content: 'annonymous';
+    visibility: visible;
+}
+
+.nickname[data-v-cd9878b6] {
+    visibility: hidden;
+}
+
+.nickname[data-v-cd9878b6]::before {
+    content: 'annonymous';
+    visibility: visible;
+}
+
+.nickname[data-v-a204db68] {
+    visibility: hidden;
+}
+
+.nickname[data-v-a204db68]::before {
+    content: 'annonymous';
+    visibility: visible;
+}
+
+.short-id[data-v-a204db68]  {
+    display: none;
+}
+
+.nickname[data-v-c2135fe4] {
+    visibility: hidden;
+}
+
+.nickname[data-v-c2135fe4]::before {
+    content: 'annonymous';
+    visibility: visible;
+}
+
+.name[data-v-e06e1414] {
+    visibility: hidden;
+}
+
+.name[data-v-e06e1414]::before {
+    content: 'annonymous';
+    visibility: visible;
+}
+
+span.name-kill {
+    visibility: hidden;
+}
+
+span.name-kill::before {
+    content: "annonymous";
+    visibility: visible;
+}
+
+.username[data-v-30f27444] {
+    visibility: hidden;
+}
+
+.username[data-v-30f27444]::before {
+    content: "#------";
+    visibility: visible;
+}
+
+.nickname[data-v-d2be3bc6] {
+    visibility: hidden;
+}
+.nickname[data-v-d2be3bc6]::before {
+    content: "annonymous";
+    visibility: visible;
+}
+
+.copy[data-v-6547bfe1] {
+    visibility: hidden;
+}
+.copy[data-v-6547bfe1]::before {
+    content: "#------";
+    visibility: visible;
+}
