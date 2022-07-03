@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>irrvlo's site :D</title>
+    <meta property="og:title" content="irrvlo's site :D" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Ubuntu;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Accordion" class="home-header">
+          <div data-type="AccordionHeader" class="home-accordion-header">
+            <svg viewBox="0 0 1024 1024" class="home-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <img
+            src="public/playground_assets/irrvloliquid-200h.gif"
+            alt="image"
+            class="home-image"
+          />
+          <div data-type="AccordionContent" class="home-accordion-content">
+            <div class="home-nav">
+              <nav
+                class="navigation-links-nav navigation-links-root-class-name20"
+              >
+                <span class="navigation-links-text"><span>About</span></span>
+                <span class="navigation-links-text1">
+                  <span>Features</span>
+                </span>
+                <span class="navigation-links-text2"><span>Pricing</span></span>
+                <span class="navigation-links-text3"><span>Team</span></span>
+                <span class="navigation-links-text4"><span>Blog</span></span>
+              </nav>
+            </div>
+          </div>
+          <div id="container">
+            <div id="text"></div>
+          </div>
+          
+          <script type="text/javascript">
+          
+          // List of sentences
+          var _CONTENT = [ "A discord bot that's <b> minimalistic. </b>", "A discord bot that's <b> simple. </b>", "A discord bot that's <b> for anything. </b>", "A discord bot that's <b> for you. </b>", "<b> Jinx. </b>" ];
+          
+          // Current sentence being processed
+          var _PART = 0;
+          
+          // Character number of the current sentence being processed 
+          var _PART_INDEX = 0;
+          
+          // Holds the handle returned from setInterval
+          var _INTERVAL_VAL;
+          
+          // Element that holds the text
+          var _ELEMENT = document.querySelector("#text");
+          
+          // Implements typing effect
+          function Type() { 
+            var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX++;
+          
+            // If full sentence has been displayed then start to delete the sentence after some time
+            if(text === _CONTENT[_PART]) {
+              clearInterval(_INTERVAL_VAL);
+              setTimeout(function() {
+                _INTERVAL_VAL = setInterval(Delete, 50);
+              }, 1000);
+            }
+          }
+          
+          // Implements deleting effect
+          function Delete() {
+            var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX--;
+          
+            // If sentence has been deleted then start to display the next sentence
+            if(text === '') {
+              clearInterval(_INTERVAL_VAL);
+          
+              // If last sentence then display the first one, else move to the next
+              if(_PART == (_CONTENT.length - 1))
+                _PART = 0;
+              else
+                _PART++;
+              _PART_INDEX = 0;
+          
+              // Start to display the next sentence after some time
+              setTimeout(function() {
+                _INTERVAL_VAL = setInterval(Type, 100);
+              }, 200);
+            }
+          }
+          
+          // Start the typing effect on load
+          _INTERVAL_VAL = setInterval(Type, 100);
+          
+          </script>
+            <span class="home-text1">
+              <span>
+                <span>
+                  Currently, Jinx is still in development. I cannot tell you
+                  when Jinx will be finished, I don&apos;t know. In the
+                  meanwhile, check out my content?
+                </span>
+              </span>
+            </span>
+            <div class="home-btn-group">
+              <a
+                href="https://twitch.tv/irrvlo"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link content"
+              >
+                Twitch
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCHa0WyJdawCjWkhkpZ3wVRw"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link1 button"
+              >
+                Youtube
+              </a>
+              <a
+                href="https://twitter.com/irrvlo"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link2 button"
+              >
+                Twitter
+              </a>
+              <a
+                href="https://www.tiktok.com/@irrvlo"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link3 button"
+              >
+                TikTok
+              </a>
+              <a
+                href="https://github.com/irrvlo"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link4 button"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </header>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
